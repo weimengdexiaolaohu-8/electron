@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, ipcMain } from "electron";
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -11,8 +11,17 @@ const createWindow = () => {
     },
   });
 
-  win.loadFile("index.html");
+  win.loadFile("./window/window.html");
 };
+
+ipcMain.on("test", (event, args) => {
+  try {
+    console.log(event, args);
+    event.reply("data-res", "xxxxxxxxxxxxx");
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 app.whenReady().then(() => {
   createWindow();

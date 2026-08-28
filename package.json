@@ -4,14 +4,16 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "electron index.ts"
+    "dev": "electron --remote-debugging-port=9222 index.ts",
+    "json:server": "json-server --watch ./server/db.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "electron": "^43.3.0"
+    "electron": "^43.3.0",
+    "json-server": "^0.17.4"
   },
   "devDependencies": {
     "@types/node": "^26.2.0",
