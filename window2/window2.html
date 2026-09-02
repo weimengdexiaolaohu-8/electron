@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,11 +8,18 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>System info</title>
+    <title>窗口2</title>
   </head>
   <body>
-    <p>主进程和渲染进程通信</p>
-    <button id="btn">请求数据</button>
-    <script src="./window.js"></script>
+    <h1>窗口2</h1>
+    <input
+      type="text"
+      name="content"
+      id="content"
+      placeholder="input something"
+    />
+    <button id="btn">发送</button>
+    <script src="./window2.js"></script>
   </body>
 </html>
+

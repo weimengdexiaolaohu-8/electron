@@ -7,7 +7,7 @@
       "name": "Electron Main via pnpm",
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["dev"],
-      "cwd": "${workspaceFolder}/aa",
+      "cwd": "${workspaceFolder}",
       "autoAttachChildProcesses": true,
       "skipFiles": ["<node_internals>/**"]
     },
