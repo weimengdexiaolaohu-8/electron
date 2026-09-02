@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 该 meta 内容用于定义该渲染进程的一个安全策略 -->
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>窗口1</title>
+    <title>Electron Demo</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <h1>窗口1</h1>
-    <p>接收窗口2传递过来的数据</p>
-    <p>当前的数据为：<span id="content"></span></p>
-    <script src="./window1.js"></script>
+    <!-- 最外层容器 -->
+    <div id="clock" class="clock">
+      <div class="hour"></div>
+      <div class="min"></div>
+      <div class="sec"></div>
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
 
